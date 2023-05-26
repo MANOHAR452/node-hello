@@ -26,8 +26,9 @@ pipeline {
                 script {
                     withDockerRegistry(credentialsId: 'dockerregistry') {
                         docker.image().push()
-                    }    
-                }    
+                    }
+                }      
             }    
+        }    
     }
 }
